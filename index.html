@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      p {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+      input:disabled {
+      background-color: #f0f0f0; 
+      cursor: not-allowed; 
+    }
+    #mensaje {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    #mensaje button {
+      margin-left: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 1</h1>
+    <p>Primer párrafo.</p>
+    <p>Segundo párrafo.</p>
+    <p>Tercer párrafo.</p>
+    <button id="cambiarColorBtn">Cambiar color a azul</button>
+    
+    <h1>Ejercicio 2: Formulario con alerta</h1>
+    <form id="miFormulario">
+      <label for="campoTexto">Ingresa un texto:</label>
+      <input type="text" id="campoTexto" name="campoTexto">
+      <button type="button" id="mostrarAlerta">Mostrar alerta</button>
+    </form>
+
+
+    <h1>Ejercicio 1: Lista con elementos</h1>
+    <ul id="miLista">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+
+    <h1>Ejercicio 2: Campo de texto y botones</h1>
+    <input type="text" id="campoTexto2" placeholder="Ingresa algo">
+    <button id="deshabilitarBtn">Deshabilitar Campo</button>
+    <button id="habilitarBtn">Habilitar Campo</button>
+
+    <form id="miFormulario2">
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+      <button type="submit">Guardar Correo</button>
+      <button type="submit">Eliminar Correo</button>
+    </form>
+    <div id="mensaje"></div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
